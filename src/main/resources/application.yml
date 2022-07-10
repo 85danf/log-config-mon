@@ -1,0 +1,23 @@
+monitor:
+  aws:
+    accessKey:
+      id: "access_key_id"
+      value: "secret_access_key"
+    region: "us-east-1"
+  schedule:
+    cron: "*/10 * * * * *"
+    interval:
+      minutes: 43200
+
+spring:
+#  profiles:
+#    active: dev
+  application:
+    name:
+      config-monitor
+  datasource:
+    name: configmondb
+  jpa:
+    # show-sql: true
+    hibernate:
+      ddl-auto: update

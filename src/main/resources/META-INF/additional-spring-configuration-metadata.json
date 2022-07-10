@@ -1,0 +1,31 @@
+{
+  "properties": [
+    {
+      "name": "monitor.schedule.cron",
+      "type": "java.lang.String",
+      "description": "cron expression for the scheduled monitor cycle. Defaults to 'every 10 minutes'.",
+      "defaultValue": "*/10 * * * * *"
+    },
+    {
+      "name": "monitor.schedule.inteval.minutes",
+      "type": "java.lang.Integer",
+      "description": "Within this window configs are considered valid, a config is tested if it's 'last checked' time is beyond this threshold. Defaults to 12 hours.",
+      "defaultValue": 720
+    },
+    {
+      "name": "monitor.aws.region",
+      "type": "java.lang.String",
+      "description": "aws region this service is operating in."
+    },
+    {
+      "name": "monitor.aws.accessKey.id",
+      "type": "java.lang.String",
+      "description": "Access Key ID for the aws account this service is running on."
+    },
+    {
+      "name": "monitor.aws.accessKey.value",
+      "type": "java.lang.String",
+      "description": "Access Key for the aws account this service is running on."
+    }
+  ]
+}
